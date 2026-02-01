@@ -1,0 +1,27 @@
+@use "../abstracts" as a;
+
+
+.btn {
+  width: 100%;
+  height: 48px;
+  border-radius: a.$br-6;
+  border: none;
+  font-size: a.$fs-16;
+  font-family: a.$font-Rubik;
+  font-weight: a.$font-medium;
+  cursor: pointer;
+}
+
+.primary {
+  background: a.$primary-color;
+  color: a.$color-white;
+  margin-top:auto;
+}
+.secondary {
+  background: a.$color-primary-gradient;
+  color: a.$secondary-color;
+}
+.disabled {
+  background: a.$color-ash;
+  color: a.$color-white;
+}

@@ -1,0 +1,45 @@
+@use "../abstracts" as a;
+
+
+.formGroup {
+  position: relative;
+  margin: 5px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+
+  span {
+    font-size: a.$fs-13;
+    color: a.$color-red;
+  }
+
+  label {
+    position: absolute;
+    top: -8px;
+    left: 12px;
+    padding: 0 6px;
+    font-size: a.$fs-13;
+    font-weight: a.$font-regular;
+    letter-spacing: 0;
+    color: a.$primary-color;
+    background-color: a.$color-light-gray;
+  }
+
+  input {
+    padding: 11px 12px;
+    font-size: a.$fs-14;
+    border: 1px solid a.$border-color;
+    border-radius: a.$br-6;
+    background: transparent;
+
+    &::placeholder {
+      color: a.$secondary-color;
+      opacity: 0.6;
+    }
+
+    &:focus {
+      outline: none;
+      border-color: a.$primary-color;
+    }
+  }
+}

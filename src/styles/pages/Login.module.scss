@@ -1,0 +1,31 @@
+@use "../abstracts" as a;
+
+
+.loginContainer {
+  padding: 40px 19px;
+  box-sizing: border-box;
+
+  h1 {
+    margin: 0 0 8px;
+    font-size: a.$fs-28;
+    font-weight: a.$font-medium;
+    letter-spacing: 0;
+    color: a.$secondary-color;
+    line-height: 36px;
+  }
+
+  .subtitle {
+    margin: 0 0 24px;
+    font-size: a.$fs-18;
+    line-height: 1.4;
+    letter-spacing: 0;
+    color: a.$secondary-color;
+    opacity: 0.6;
+  }
+
+  .loginForm {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+}

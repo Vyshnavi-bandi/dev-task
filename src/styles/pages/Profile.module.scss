@@ -1,0 +1,93 @@
+@use "../abstracts" as a;
+
+
+.profileContainer {
+  height: 100%;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+
+  .profileHeader {
+    padding: 23px 19px;
+    background: a.$color-white;
+    box-shadow: 0 3px 6px #00000007;
+
+    h2 {
+      margin: 0;
+      font-size: a.$fs-18;
+      font-weight: a.$font-regular;
+      letter-spacing: 0;
+      color: a.$secondary-color;
+      text-transform: capitalize;
+    }
+  }
+
+  .profileInfo {
+    display: flex;
+    gap: 12px;
+    padding: 20px 19px;
+
+    .avatarWrapper {
+      position: relative;
+      width: 76px;
+      height: 76px;
+
+      .avatar {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      /* Camera badge */
+      .badge {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+        width: 20px;
+        height: 20px;
+        border-radius: a.$br-50-percent;
+        font-size: 10px;
+
+        background: a.$primary-color;
+        color: a.$color-white;
+        @include a.flex-center;
+      }
+    }
+
+    .userDetails {
+      h3 {
+        margin: 0;
+        font-size: a.$fs-15;
+        font-weight: a.$font-medium;
+        letter-spacing: 0;
+        color: a.$secondary-color;
+        text-transform: capitalize;
+      }
+
+      p {
+        margin: 2px 0 0;
+        font-size: a.$fs-14;
+        letter-spacing: 0;
+        color: a.$secondary-color;
+        text-transform: capitalize;
+      }
+    }
+  }
+
+  .profileDesc {
+    padding: 0 19px;
+    font-size: a.$fs-14;
+    line-height: 1.5;
+    letter-spacing: 0;
+    color: a.$secondary-color;
+    text-transform: capitalize;
+  }
+
+  .divider {
+    margin-top: auto;
+    border-top: 1px dashed #dcdcdc;
+  }
+}
